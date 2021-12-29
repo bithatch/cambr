@@ -16,9 +16,9 @@ Cambr makes use of [webcam-capture](https://github.com/sarxos/webcam-capture) fo
 
 Installers are provided for Linux, Windows and Mac OS. Download and run the GUI installers appropriate for your desktop.
 
- * [Linux Installer](https://github.com/bithatch/cambr/releases/download/1.0.0/cambr_unix_1_0_0.sh)  
- * [Mac OS Installer](https://github.com/bithatch/cambr/releases/download/1.0.0/cambr_macos_1_0_0.dmg)  
- * [Windows Installer](https://github.com/bithatch/cambr/releases/download/1.0.0/cambr_windows-x64_1_0_0.exe)
+ * [Linux Installer](https://github.com/bithatch/cambr/releases/download/v1.0.0/cambr_unix_1_0_0.sh)  
+ * [Mac OS Installer](https://github.com/bithatch/cambr/releases/download/v1.0.0/cambr_macos_1_0_0.dmg)  
+ * [Windows Installer](https://github.com/bithatch/cambr/releases/download/v1.0.0/cambr_windows-x64_1_0_0.exe)
  
 ### Run From Source
 
