@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="690.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="uk.co.bithatch.cambr.WebCamPreviewController">
+    <bottom>
+        <FlowPane fx:id="fpBottomPane" alignment="CENTER" columnHalignment="CENTER" hgap="50.0" prefHeight="80.0" prefWidth="200.0" style="-fx-background-color:#ccc;">
+            <children>
+                <Button fx:id="btnStartCamera" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#startCamera" prefHeight="50.0" prefWidth="190.0" text="Start Camera">
+                    <font>
+                        <Font name="Segoe UI" size="18.0" fx:id="x1" />
+                    </font>
+                </Button>
+                <Button fx:id="btnStopCamera" font="$x1" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#stopCamera" prefHeight="50.0" prefWidth="190.0" text="Stop Camera" />
+                <Button fx:id="btnDisposeCamera" font="$x1" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#disposeCamera" prefHeight="50.0" prefWidth="190.0" text="Dispose Camera" />
+            </children>
+        </FlowPane>
+    </bottom>
+    <center>
+        <BorderPane fx:id="bpWebCamPaneHolder" prefHeight="200.0" prefWidth="200.0">
+            <center>
+                <ImageView fx:id="imgWebCamCapturedImage" fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER" />
+            </center>
+        </BorderPane>
+    </center>
+    <top>
+      <BorderPane>
+         <left>
+                <Label font="$x1" text="%device" BorderPane.alignment="CENTER" />
+         </left>
+         <right>
+            <HBox BorderPane.alignment="CENTER">
+               <children>
+                  <CheckBox fx:id="flipX" mnemonicParsing="false" text="%flipX" />
+                  <CheckBox fx:id="flipY" mnemonicParsing="false" text="%flipY" />
+               </children>
+            </HBox>
+         </right>
+         <center>
+                <ComboBox fx:id="cbCameraOptions" prefWidth="260.0" style="-fx-font-size: 18px;" BorderPane.alignment="CENTER" />
+         </center>
+      </BorderPane>
+    </top>
+</BorderPane>

@@ -1,0 +1,8 @@
+.form {
+	-fx-padding: 16px;
+	-fx-spacing: 16px;
+}
+
+.padded {
+    -fx-padding: 16px;    
+}
