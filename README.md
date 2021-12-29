@@ -4,8 +4,6 @@ A cross-platform, JavaFX based webcam to MJPEG streamer.
 
 ![Screenshot](src/main/web/screenshot.png  "Screenshot")
 
-This application was written to provide a way to use a cheap webcam with [Animaze](https://www.animaze.us/) on Linux (with Proton), making use of it's new "IP Camera" feature. 
-
 Cambr simply converts your webcams output into an MJEPG stream. 
 
 While it is possible to achieve the same thing with other technologies available on Linux (e.g. GStreamer, VLC), these all involve complicated command line options.
